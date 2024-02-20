@@ -14,15 +14,24 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
+h2.title {
     margin: 10px 0;
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 900;
 }
 
 .list {
     margin: 30px 40px;
 }
+
+.bgc-yellow {
+    background: #F7D070;
+}
+
+.bgc-something {
+    background-color: #A61B1B;
+}
+
 
 /* Header section */
 .header-container {
@@ -40,17 +49,20 @@ h2 {
 .header-container>h3 {
     width: 400px;
     text-align: center;
+    font-weight: 800;
 }
 
 
 /* The container and for all sections */
 .container {
     margin: 0 80px;
+    width: 910px;
 }
 
 .section {
     margin: 30px 0;
 }
+
 
 /* About section */
 .about-section>.long-text {
@@ -58,22 +70,75 @@ h2 {
 }
 
 .about-section>.cv-image {
-    height: 300px;
+    height: 270px;
     border: 15px solid #9fb3c8;
 }
 
 
 /* Work section */
+table tr {
+    margin: 6px;
+    font-size: 16px;
+}
+
 .work-section thead {
     background-color: #9fb3c8;
 }
 
-.work-section td {
-    border-bottom: 1px solid #dee6ee;
+.work-section table {
+    background-color: #F0F4F8;
 }
 
-/* Education section */
-.education-section ol {}
+.work-section td {
+    border-bottom: 2px solid #9FB3C8;
+}
 
-/* Family section */
-.family-section {}
+
+/* Quotes section */
+.quotes-section p {
+    font-size: 18px;
+    margin: 20px 30px;
+    padding: 8px;
+    width: 250px;
+}
+
+.border-left {
+    border-left: #DA4A91 8px solid;
+    text-align: left;
+}
+
+.border-right {
+    border-right: #DA4A91 8px solid;
+    text-align: right;
+}
+
+.double-quotes {
+    color: #9FB3C8;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Social media section */
+.social-list li {
+    margin: 10px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* End container */
+.end-container {
+    margin: 80px 0 0 0;
+    position: inherit;
+    height: 100px;
+    background-color: #F0F4F8;
+}
+h1.faded-text {
+    position: relative;
+    text-align: center;
+    top: -40px;
+    color: #F0F4F8;
+    font-weight: 900;
+    font-size: 48px;
+}
