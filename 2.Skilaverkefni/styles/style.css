@@ -1,0 +1,79 @@
+/* Global attributes */
+html {
+    font-family: Montserrat;
+}
+
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 10px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.list {
+    margin: 30px 40px;
+}
+
+/* Header section */
+.header-container {
+    display: flex;
+    height: 250px;
+    color: white;
+    background-color: #102a43;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container>.title,
+.header-container>h1,
+.header-container>h3 {
+    width: 400px;
+    text-align: center;
+}
+
+
+/* The container and for all sections */
+.container {
+    margin: 0 80px;
+}
+
+.section {
+    margin: 30px 0;
+}
+
+/* About section */
+.about-section>.long-text {
+    margin: 30px 0;
+}
+
+.about-section>.cv-image {
+    height: 300px;
+    border: 15px solid #9fb3c8;
+}
+
+
+/* Work section */
+.work-section thead {
+    background-color: #9fb3c8;
+}
+
+.work-section td {
+    border-bottom: 1px solid #dee6ee;
+}
+
+/* Education section */
+.education-section ol {}
+
+/* Family section */
+.family-section {}
