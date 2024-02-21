@@ -1,0 +1,106 @@
+/* Global attributes */
+html,
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    height: 100%;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(21, 32, 32);
+}
+
+
+/* Header container */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 20%;
+    background-color: rgb(33, 54, 54);
+}
+
+.header>.image {
+    height: 60%;
+    width: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.2rem white);
+}
+
+.header>.title-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+/* Container */
+.container {
+    display: flex;
+}
+
+/* Projects section */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin: 1% 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 1%;
+    padding: 20px;
+    background-color: rgb(63, 105, 105);
+    filter: drop-shadow(0 0 0.2rem black);
+}
+
+.card>.date {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 14px;
+}
+
+.card>.title {
+
+}
+
+.card>.subtext {
+
+}
+
+.card>.about {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; /* Limit to 4 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.card>.button {
+    display:flex;
+    justify-content: end;
+    filter: drop-shadow(0 0 0.4px white);
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    word-spacing: 2px;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}
