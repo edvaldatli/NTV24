@@ -46,16 +46,35 @@ body {
 
 /* Container */
 .container {
+    padding: 1% 0;
     display: flex;
+    flex-direction: column;
 }
 
 /* Projects section */
+@keyframes breathingShadow {
+    0%, 100% { 
+      filter: drop-shadow(0 0 0.4px white);
+    }
+    50% { 
+      filter: drop-shadow(0 0 2px white);
+    }
+}
+
+.center-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+
 .projects {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    margin: 1% 20px;
+    padding: 1% 20px;
 }
 
 .card {
@@ -65,7 +84,7 @@ body {
     margin: 1%;
     padding: 20px;
     background-color: rgb(63, 105, 105);
-    filter: drop-shadow(0 0 0.2rem black);
+    filter: drop-shadow(0 0 0.1rem black);
 }
 
 .card>.date {
@@ -73,14 +92,6 @@ body {
     top: 10px;
     right: 20px;
     font-size: 14px;
-}
-
-.card>.title {
-
-}
-
-.card>.subtext {
-
 }
 
 .card>.about {
@@ -93,14 +104,32 @@ body {
     max-height: 150px;
 }
 
-.card>.button {
+.card .button {
     display:flex;
     justify-content: end;
+    align-items: center;
     filter: drop-shadow(0 0 0.4px white);
+    transition: filter 0.3s ease;
     color: white;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     word-spacing: 2px;
     letter-spacing: 0.7px;
     text-decoration: none;
+}
+
+.card .button:hover {
+    animation: breathingShadow 1s ease-in-out infinite;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    height: 25px;
+    width: auto;
+    color: white;
 }
