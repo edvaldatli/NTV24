@@ -936,6 +936,16 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+@media (min-width: 640px) {
+  .sm\:content-normal {
+    align-content: normal;
+  }
+
+  .sm\:content-start {
+    align-content: flex-start;
+  }
+}
+
 @media (min-width: 1280px) {
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
