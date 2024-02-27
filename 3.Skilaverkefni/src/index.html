@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,89 +9,157 @@
     <link rel="stylesheet" href="styles/output.css">
     <title>Test</title>
 </head>
+
 <body class="bg-slate-600 text-white">
     <div class="flex content-center justify-center mx-auto h-52 p-4 bg-slate-700">
-        <img class="flex-none max-w-52 max-h-52 aspect-square object-cover rounded-full shadow-lg" src="assets/images/edvald.jpeg" alt="Picture of me">
+        <img class="flex-none max-w-52 max-h-52 aspect-square object-cover rounded-full shadow-lg"
+            src="assets/images/edvald.jpeg" alt="Picture of me">
         <div class="flex w-52 justify-center flex-col font-body p-4">
             <h1 class="w-max font-medium text-xl">Eðvald Atli Sigurvaldsson</h1>
             <p class="font">Full-stack developer</p>
         </div>
     </div>
-    <div class="flex flex-wrap p-4 gap-6 m-3">
-        <div class="xs:w-full xl:w-1/5 w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 self-start">
-            <div class="bg-gray-800 rounded-md p-2">
+    <div class="grid xl:grid-cols-3 xl:grid-rows-2 auto-rows-auto p-4 gap-6 m-3 mx-auto">
+        <div
+            class="xs:w-full w-full h-full xl:col-span-1 xl:row-span-1 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 self-start">
+            <div class="bg-gray-800 rounded-md p-2 h-full">
                 <h2 class="text-3xl font-bold pl-6 pt-4">
-                    Basic information
+                    About me
                 </h2>
-                <ul class="flex flex-col space-y-2 p-5 justify-center w-full">
-                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><svg class="h-5 w-5 text-blue-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="12" y1="8" x2="12.01" y2="8" />  <rect x="4" y="4" width="16" height="16" rx="2" />  <polyline points="11 12 12 12 12 16 13 16" /></svg><span>010598-2499</span></li>
-                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><svg class="h-5 w-5 text-blue-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg><span>Þorrasalir 1, 201 Kópavogur</span></li>
-                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><img class="h-5 w-5 text-blue-500" src="assets/images/git_white.png" alt=""> <a href="github.com/edvaldatli">edvaldatli</a></li>
-                </ul>
+                <p class="text-wrap p-6 font-medium">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+                    ipsam,
+                    ducimus laboriosam facilis
+                    dignissimos commodi quo consequatur provident ad libero soluta minus ratione accusantium excepturi,
+                    illo officia fugiat consequuntur! Perferendis.</p>
             </div>
         </div>
-        <div class="xs:w-full xl:w-2/5 w-full flex-col">
+        <div class="xs:w-full w-full xl:col-span-2 xl:row-span-2">
             <div class="w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
                 <div class="w-full bg-gray-800 rounded-md p-4 space-y-6">
                     <h2 class="text-3xl font-bold pl-6 pt-4">
                         Employment history
                     </h2>
                     <div class="relative m-2 p-4 shadow-2xl rounded-lg bg-green-400 text-black">
-                        <div class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-green-500 py-1.5 px-3 text-xs text-white">
+                        <div
+                            class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-green-500 py-1.5 px-3 text-xs text-white">
                             <span class="">2023 - Núna</span>
                         </div>
                         <h2 class="text-3xl font-semibold">Verkstjóri í framleiðslu</h2>
                         <h3 class="text-lg font-semibold">Nathan & Olsen</h3>
                         <p>
-                            Ég sé um pökkun og pökkunarplan Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore?.
+                            Ég sé um pökkun og pökkunarplan Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore?.
                         </p>
                     </div>
                     <div class="relative m-2 p-4 shadow-2xl rounded-lg bg-slate-700 text-white">
-                        <div class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-slate-600 py-1.5 px-3 text-xs text-white">
+                        <div
+                            class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-slate-600 py-1.5 px-3 text-xs text-white">
                             <span class="">2022 - 2023</span>
                         </div>
                         <h2 class="text-3xl font-semibold">Sölufulltrúi</h2>
                         <h3 class="text-lg font-semibold">Nathan & Olsen</h3>
                         <p>
-                            Rúntaði milli verlanna Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore?. 
+                            Rúntaði milli verlanna Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore?.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, reprehenderit!
                         </p>
                     </div>
                     <div class="relative m-2 p-4 shadow-lg rounded-lg bg-slate-700">
-                        <div class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-slate-600 py-1.5 px-3 text-xs text-white">
+                        <div
+                            class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-slate-600 py-1.5 px-3 text-xs text-white">
                             <span class="">2023</span>
                         </div>
                         <h2 class="text-3xl font-semibold">Sölufulltrúi</h2>
                         <h3 class="text-md font-semibold">Nathan & Olsen</h3>
                         <p>
-                            Rúntaði milli verlanna Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore?. 
+                            Rúntaði milli verlanna Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore?.
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, reprehenderit!
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="xs:w-full xl:w-2/5 w-full">
-            <div class="h-36 w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1">
-                <div class="h-full w-full bg-gray-800 rounded-md p-2">
-                    <h2 class="text-2xl font-medium text-center">
-                        Git repositories
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <div class="xs:w-full xl:w-1/5 w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 self-start">
-            <div class="bg-gray-800 rounded-md p-2">
+        <div
+            class="xs:w-full w-full h-full xl:col-span-1 rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 self-start">
+            <div class="bg-gray-800 rounded-md p-2 h-full">
                 <h2 class="text-3xl font-bold pl-6 pt-4">
                     Basic information
                 </h2>
                 <ul class="flex flex-col space-y-2 p-5 justify-center w-full">
-                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><svg class="h-5 w-5 text-blue-500"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="12" y1="8" x2="12.01" y2="8" />  <rect x="4" y="4" width="16" height="16" rx="2" />  <polyline points="11 12 12 12 12 16 13 16" /></svg><span>010598-2499</span></li>
-                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><svg class="h-5 w-5 text-blue-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg><span>Þorrasalir 1, 201 Kópavogur</span></li>
-                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><img class="h-5 w-5 text-blue-500" src="assets/images/git_white.png" alt=""> <a href="github.com/edvaldatli">edvaldatli</a></li>
+                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><svg
+                            class="h-5 w-5 text-blue-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" />
+                            <line x1="12" y1="8" x2="12.01" y2="8" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <polyline points="11 12 12 12 12 16 13 16" />
+                        </svg><span>010598-2499</span></li>
+                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><svg
+                            class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg><span>Þorrasalir 1, 201 Kópavogur</span></li>
+                    <li class="flex items-center space-x-2 whitespace-nowrap font-semibold"><img
+                            class="h-5 w-5 text-blue-500" src="assets/images/git_white.png" alt=""> <a
+                            href="github.com/edvaldatli">edvaldatli</a></li>
                 </ul>
             </div>
         </div>
+        <div class="xs:w-full w-full h-full xl:row-span-2 xl:col-span-2 content-stretch">
+            <div
+                class="h-full w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 self-start">
+                <div class="h-full w-full bg-gray-800 rounded-md p-4 space-y-6">
+                    <h2 class="text-3xl font-bold pl-6 pt-4">
+                        Git repositories
+                    </h2>
+                    <div class="relative m-2 p-4 shadow-lg rounded-lg bg-slate-700">
+                        <div
+                            class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-slate-600 py-1.5 px-3 text-xs text-white">
+                            <span class="">2023</span>
+                        </div>
+                        <h2 class="text-3xl font-semibold">Hangman Flutter App</h2>
+                        <a class="flex items-center space-x-4 whitespace-nowrap font-medium pt-1 pb-1"
+                            href="https://github.com/edvaldatli/hangman_app"><img class="h-5 w-5 text-blue-500"
+                                src="assets/images/git_white.png" alt=""></a>
+                        <p class="text-wrap font-medium">
+                            Hangman app that lets you play the classic game Hangman. It is available on the web on <a
+                                href="hangman.edvaldatli.com">here!</a>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti adipisci qui officia sint
+                            delectus voluptate ipsam quos vero expedita impedit quibusdam obcaecati aliquid minus, iusto
+                            aliquam unde ea debitis consequatur.
+                        </p>
+                    </div>
+                    <div class="relative m-2 p-4 shadow-lg rounded-lg bg-slate-700">
+                        <div
+                            class="absolute top-6 right-4 items-center text-center whitespace-nowrap rounded-lg w-24 bg-slate-600 py-1.5 px-3 text-xs text-white">
+                            <span class="">2023</span>
+                        </div>
+                        <h2 class="text-3xl font-semibold">Hangman Api</h2>
+                        <a class="flex items-center space-x-4 whitespace-nowrap font-medium pt-1 pb-1"
+                            href="github.com/edvaldatli"><img class="h-5 w-5 text-blue-500"
+                                src="assets/images/git_white.png" alt=""></a>
+                        <p class="text-wrap font-medium">
+                            Express API that fetches word from a Firebase database. You can choose between languages and
+                            difficulty.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti adipisci qui officia sint
+                            delectus voluptate ipsam quos vero expedita impedit quibusdam obcaecati aliquid minus, iusto
+                            aliquam unde ea debitis consequatur.
+                            You can visit the website <a href="https://github.com/edvaldatli/hangman_app_api">here.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="xs:w-full w-full xl:col-span-1 xl:row-span-1">
+            <div class="h-36 w-full rounded-md bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-1 self-start">
+                <div class="h-full w-full bg-gray-800 rounded-md p-2">
+                    <h2 class="text-3xl font-bold pl-6 pt-4">
+                        References
+                    </h2>
+                </div>
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>
