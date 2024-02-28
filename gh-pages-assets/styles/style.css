@@ -78,7 +78,6 @@ body {
 .projects {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     justify-content: center;
     padding: 1% 20px;
 }
