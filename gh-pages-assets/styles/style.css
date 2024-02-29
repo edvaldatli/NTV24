@@ -84,7 +84,9 @@ body {
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 16px; /* Adjust the gap between items as needed */
-    padding: 16px; /* Adjust the padding as needed */
+    padding: 16px;
+    margin-left: 5%;
+    margin-right: 5%; /* Adjust the padding as needed */
 }
 
 .card {
