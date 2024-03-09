@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         sans: ["Poppins", "sans-serif"],
       },
+      minHeight: {
+        "card": "32rem",
+      },
     },
   },
   plugins: [],

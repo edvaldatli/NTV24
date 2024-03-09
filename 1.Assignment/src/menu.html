@@ -6,9 +6,9 @@
     <title>The Hungry Llama</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/output.css">
     <style>
         #drawer {
@@ -23,31 +23,27 @@
                 <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4 h-full">
             </a>
         </div>
-        <div class="flex justify-center w-1/3">
+        <div class="flex justify-center w-auto">
             <ul class="flex flex-row items-center justify-center gap-6">
-                <a href="index.html"
-                    class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li class="px-6">Home</li>
-                </a>
-                <a href="menu.html"
-                    class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li class="px-6">Menu</li>
-                </a>
-                <a href="about.html"
-                    class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li class="px-6">About</li>
-                </a>
-                <a href="contact.html"
-                    class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li class="px-6">Contact us</li>
-                </a>
+                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="index.html" class="px-6">Home</a>
+                </li>
+                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="menu.html" class="px-6">Menu</a>
+                </li>
+                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="about.html" class="px-6">About</a>
+                </li>
+                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="contact.html" class="px-6 w-full">Contact us</a>
+                </li>
             </ul>
         </div>
         <div class="w-1/3">
 
         </div>
     </nav>
-    <nav class="relative z-20">
+    <nav class="fixed z-20 w-full">
         <div class="flex justify-between w-full h-20 bg-darkGray md:hidden">
             <button id="toggleDrawer" class="flex justify-start items-center left-0 h-full p-4 text-white">
                 <span class="material-symbols-outlined">menu</span>
@@ -60,56 +56,161 @@
                 <!-- Make sure this matches the size of your toggleDrawer button -->
             </div>
         </div>
-        <div id="drawer"
-            class="fixed md:hidden top-20 left-0 w-full bg-darkGray shadow-md hidden transform -translate-y-full -z-10">
+        <div id="drawer" class="fixed md:hidden top-20 left-0 w-full bg-darkGray shadow-md hidden transform -translate-y-full -z-10">
             <ul class="flex flex-col items-center justify-center text-lg">
-                <a href="index.html"
-                    class="px-4 text-white h-full w-full text-center p-6 bg-zinc-700 ease-in-out transition-colors hover:bg-zinc-600 duration-100 text-nowrap">
-                    <li>Home</li>
-                </a>
-                <a href="menu.html"
-                    class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li>Menu</li>
-                </a>
-                <a href="about.html"
-                    class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li>About Us</li>
-                </a>
-                <a href="contact.html"
-                    class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <li>Contact</li>
-                </a>
+                <li class="px-4 text-white h-full w-full text-center p-6 bg-zinc-700 ease-in-out transition-colors hover:bg-zinc-600 duration-100 text-nowrap">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
+                    <a href="contact.html">Contact us</a>
+                </li>
             </ul>
         </div>
     </nav>
-    <div class="w-full px-12 text-white pt-32 bg-backgroundGray">
-        <h1 class="text-3xl font-bold text-white mb-6">Starters</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-12 mx-auto max-w-4xl">
-            <div class="bg-darkerGray rounded-lg overflow-hidden max-w-96">
-                <img src="../assets/images/food/no-background/_915f1dcb-0d72-45dd-9dce-990284860684-429469018_940774867748184_5818060809437250845_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain p-4">
-                <div class="p-6 text-white">
-                    <h2 class="text-3xl font-bold">Chicken Caesar Salad</h2>
-                    <p class="text-lg">Romaine Lettuce, Grilled Chicken, Parmesan Cheese and Caesar Dressing</p>
+    <div class="h-20 bg-backgroundGray">
+        <!-- Empty div to prevent the content from being hidden behind the fixed nav -->
+    </div>
+    <div class="w-full p-12 text-white pt-12 bg-backgroundGray space-y-10">
+        <div class="flex flex-col justify-center mx-auto text-center w-full sm:w-1/2">
+            <h1 class="text-5xl font-bold text-white">Our Menu</h1>
+            <p class="text-lg">We have a wide variety of dishes to choose from. We have everything from salads to sandwiches to sides. We have something for everyone.</p>
+        </div>
+        <div class="flex flex-row justify-center mx-auto w-full sm:w-1/2">
+            <a href="#courses">Main Courses</a>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <h1 id="starters" class="text-3xl font-bold text-white mb-6">Starters</h1>
+            <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mx-auto max-w-4xl">
+                <div class=" bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_915f1dcb-0d72-45dd-9dce-990284860684-429469018_940774867748184_5818060809437250845_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Chicken Caesar Salad</h2>
+                        <p class="text-lg">Romaine Lettuce, Grilled Chicken, Parmesan Cheese and Caesar Dressing</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_b729b5b5-364a-4848-935a-fab5606f88a5-429476247_778159327529417_635815065968503042_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Classic Cobb Salad</h2>
+                        <p class="text-lg">Grilled Chicken, Avacado, Bacon, Hard-boiled Eggs, Tomatoes and Blue Cheese Dressing</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_cad066b2-056b-47dd-b347-d5af7744103b-429913139_935745751531826_2809935944646342857_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Asian Chicken Salad</h2>
+                        <p class="text-lg">Shredded Chicken, Mandarin Oranges, Crispy Wontons and Sesame Ginger Dressing</p>
+                    </div>
                 </div>
             </div>
-            <div class="bg-darkerGray rounded-lg overflow-hidden max-w-96">
-                <img src="../assets/images/food/no-background/_915f1dcb-0d72-45dd-9dce-990284860684-429469018_940774867748184_5818060809437250845_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain p-4">
-                <div class="p-6 text-white">
-                    <h2 class="text-3xl font-bold">Chicken Caesar Salad</h2>
-                    <p class="text-lg">Romaine Lettuce, Grilled Chicken, Parmesan Cheese and Caesar Dressing</p>
+        </div>
+        <div class="max-w-4xl mx-auto mt-42">
+            <h1 id="courses" class="text-3xl font-bold text-white mb-6">Main Courses</h1>
+            <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mx-auto max-w-4xl">
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_53163443-6b71-453e-95eb-c7d237d6fb2c-429919411_1439134310009711_3626724235414060282_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Southwest Chicken Salad</h2>
+                        <p class="text-lg">Grilled Chicken, Corn, Black Beans, Avacado, Tomatoes and Chipotle Ranch Dressing</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_412d6052-b7e2-44d2-86a5-28e15c355955-430706804_426608639817560_3944835440374506517_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Grilled Chicken Salad</h2>
+                        <p class="text-lg">Grilled Chicken, Mixed Greens, Cherry Tomatoes, Red Onion and Balsamic Vinaigrette</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_7a42e3af-3a74-429d-8c56-2b142f22580c-430278366_381555441306781_5696019189086555571_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Greek Chicken Salad</h2>
+                        <p class="text-lg">Grilled Chicken, Feta Cheese, Cucumbers, Kalamata Olives and Lemon-Olive Oil Dressing</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_915f1dcb-0d72-45dd-9dce-990284860684-429469018_940774867748184_5818060809437250845_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Buffalo Chicken Salad</h2>
+                        <p class="text-lg">Crispy Chicken Tenders, Mixed Greens, Carrots, Celery, Blue Cheese Crumbles and Buffalo Ranch Dressing</p>
+                    </div>
+                </div>
+                <div class="flex flex-col bg-darkerGray rounded-lg overflow-hidden md:max-w-96 justify-center items-center text-grayText py-8 px-4 space-y-3">
+                    <span class="material-symbols-outlined text-center text-9xl font-extralight">lightbulb</span>
+                    <h2 class="text-3xl font-bold text-center ">We are always experimenting</h2>
+                    <p class="text-lg font-semibold text-center">At The Hungry Llama, we are always striving to make new and original dishes for you and your significant others.</p>
                 </div>
             </div>
-            <div class="bg-darkerGray rounded-lg overflow-hidden max-w-96">
-                <img src="../assets/images/food/no-background/_915f1dcb-0d72-45dd-9dce-990284860684-429469018_940774867748184_5818060809437250845_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain p-4">
-                <div class="p-6 text-white">
-                    <h2 class="text-3xl font-bold">Chicken Caesar Salad</h2>
-                    <p class="text-lg">Romaine Lettuce, Grilled Chicken, Parmesan Cheese and Caesar Dressing</p>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-white mb-6">Sandwiches</h1>
+            <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mx-auto max-w-4xl">
+                <div class=" bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_04afd095-99fe-4469-b5f9-a70574587657-429785983_930985044972314_4779316177836784773_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Grilled Chicken Panini</h2>
+                        <p class="text-lg">Mozzarella Cheese, Roasted Red Peppers and Pesto Mayo</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_dc0457dd-e370-4cbb-ad10-5cbe04a6072a-429885557_328150343563361_2512034469401537760_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3 px-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Chicken Salad Sandwich</h2>
+                        <p class="text-lg">Shredded Chicken, Grapes, Almonds and Lettuce on Whole Wheat Bread</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/_5b02ca7f-825b-4a8f-92aa-b0074a3e9821-429833760_360971990243135_5902013048052412173_n.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Buffalo Chicken Wrap</h2>
+                        <p class="text-lg">Crispy Chicken, Mixed Greens, Blue Cheese Crumbles and Buffalo Ranch Dressing in a Flour Tortilla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-white mb-6">Sides</h1>
+            <div class="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mx-auto max-w-4xl">
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/5f74a95c88f1435968c4fe03_Sweet-Potato-Fries.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Sweet Potato Fries</h2>
+                        <p class="text-lg">Sweet Potato Fries with Sea Salt</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/Removal-393.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Garlic Parmesan Fries</h2>
+                        <p class="text-lg">Potato Fries with Parmesan Cheese sprinkled on top</p>
+                    </div>
+                </div>
+                <div class="bg-darkerGray rounded-lg overflow-hidden md:max-w-96">
+                    <img src="../assets/images/food/no-background/Removal-287.png" alt="Chicken Caesar Salad" class="w-full h-64 object-contain py-3">
+                    <div class="px-6 py-3 text-white space-y-2">
+                        <h2 class="text-3xl font-bold">Grilled Vegetables</h2>
+                        <p class="text-lg">Grilled mix of Vegetables topped with Balsamic Vinaigrette</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="flex w-full max-h-fit text-white bg-black justify-around px-20 pb-10 flex-wrap">
-        <div class="flex flex-col content-end justify-center items-start">
+    <div class="flex flex-row justify-center items-center bg-darkerGray">
+        <div class="flex flex-col justify-center items-center py-10 w-1/2 text-center space-y-2">
+            <h2 class="text-3xl font-bold text-white">We are always experimenting</h2>
+            <p class="text-lg font-semibold text-center text-white">At The Hungry Llama, we are always striving to make new and original dishes for you and your significant others.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="flex w-full max-h-fit text-white bg-black justify-start md:justify-around flex-wrap space-y-4">
+        <div class="flex flex-col content-end justify-center items-start font-medium mx-auto py-6">
             <h2 class="text-lg mb-2">QUICK LINKS</h2>
             <ul class="justify-start text-base space-y-2 text-grayText font-medium">
                 <li>Home</li>
@@ -118,12 +219,11 @@
                 <li>About</li>
             </ul>
         </div>
-        <div class="hidden flex-col justify-center items-center sm:flex">
+        <div class="hidden flex-col justify-center items-center lg:flex">
             <img src="../assets/images/logo-no-background2.png" alt="" class="h-1/2">
             <h2 class="text-lg font-light text-grayText">Where Good Food Meets Great Company</h2>
         </div>
-        <div class="flex flex-col justify-center items-end">
-            
+        <div class="flex flex-col justify-center md:content-start items-end mx-auto py-6">  
             <ul class="flex flex-col text-sm space-y-2 text-grayText font-medium">
                 <h2 class="text-lg text-white">CONTACT</h2>
                 <li class="flex items-center">
