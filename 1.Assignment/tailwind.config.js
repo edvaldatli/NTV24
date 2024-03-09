@@ -6,7 +6,9 @@ module.exports = {
       colors: {
         darkGray: "#212121",
         darkerGray: "#1F1F1F",
-        backgroundGray: "#433E3D"
+        grayText: "#8D8D8D",
+        backgroundGray: "#433E3D",
+        blueIconColor: "#0081FE",
       },
       dropShadow: {
         shadowGlow: "0 0 5px rgba(255, 255, 255, 0.6)",
