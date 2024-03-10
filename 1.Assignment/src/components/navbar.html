@@ -1,56 +1,43 @@
 <nav class="fixed hidden md:flex justify-between w-full h-20 bg-darkGray z-20">
-    <div class="flex w-1/3 h-full">
-        <a href="index.html">
-            <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4 h-full">
-        </a>
-    </div>
-    <div class="flex justify-center w-auto">
-        <ul class="flex flex-row items-center justify-center gap-6">
-            <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="index.html" class="px-6">Home</a>
-            </li>
-            <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="menu.html" class="px-6">Menu</a>
-            </li>
-            <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="about.html" class="px-6">About</a>
-            </li>
-            <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="contact.html" class="px-6 w-full">Contact us</a>
-            </li>
-        </ul>
-    </div>
-    <div class="w-1/3">
+        <div class="flex w-1/3 h-full">
+            <a href="index.html">
+                <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4 h-full">
+            </a>
+        </div>
+        <div class="flex justify-center w-auto">
+            <div class="flex flex-row items-center justify-center gap-6">
+                <a href="index.html" class="px-6 flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">Home</a>
+                <a href="menu.html" class="px-6 flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">Menu</a>
+                <a href="about.html" class="px-6 flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">About</a>
+                <a href="contact.html" class="px-6 flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">Contact us</a>
+            </div>
+        </div>
+        <div class="w-1/3">
 
-    </div>
-</nav>
-<nav class="fixed z-20 w-full">
-    <div class="flex justify-between w-full h-20 bg-darkGray md:hidden">
-        <button id="toggleDrawer" class="flex justify-start items-center left-0 h-full p-4 text-white">
-            <span class="material-symbols-outlined">menu</span>
-        </button>
-        <div class="flex m-auto h-full">
-            <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4">
         </div>
-        <div class="m-4 opacity-0"> <!-- Invisible spacer -->
-            <span class="material-symbols-outlined select-none">menu</span>
-            <!-- Make sure this matches the size of your toggleDrawer button -->
+    </nav>
+    <nav class="fixed z-20 w-full">
+        <div class="flex justify-between w-full h-20 bg-darkGray md:hidden">
+            <button id="toggleDrawer" class="flex justify-start items-center left-0 h-full p-4 text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+            <div class="flex m-auto h-full">
+                <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4">
+            </div>
+            <div class="m-4 opacity-0"> <!-- Invisible spacer -->
+                <span class="material-symbols-outlined select-none">menu</span>
+                <!-- Make sure this matches the size of your toggleDrawer button -->
+            </div>
         </div>
+        <div id="drawer" class="fixed md:hidden top-20 left-0 w-full bg-darkGray shadow-md hidden transform -translate-y-full -z-10">
+            <div class="flex flex-col items-center justify-center text-lg">
+                <a href="index.html" class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">Home</a>
+                <a href="menu.html" class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">Menu</a>
+                <a href="about.html" class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">About</a>
+                <a href="contact.html" class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">Contact us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="h-20 bg-backgroundGray">
+        <!-- Empty div to prevent the content from being hidden behind the fixed nav -->
     </div>
-    <div id="drawer" class="fixed md:hidden top-20 left-0 w-full bg-darkGray shadow-md hidden transform -translate-y-full -z-10">
-        <ul class="flex flex-col items-center justify-center text-lg">
-            <li class="px-4 text-white h-full w-full text-center p-6 bg-zinc-700 ease-in-out transition-colors hover:bg-zinc-600 duration-100 text-nowrap">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="menu.html">Menu</a>
-            </li>
-            <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="about.html">About</a>
-            </li>
-            <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                <a href="contact.html">Contact us</a>
-            </li>
-        </ul>
-    </div>
-</nav>

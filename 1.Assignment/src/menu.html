@@ -20,66 +20,8 @@
     <button id="backToTop" class="fixed bottom-4 right-4 bg-zinc-900 rounded-full h-12 w-12 hidden">
         <span class="material-symbols-outlined text-white text-center flex align-middle justify-center text-3xl">arrow_upward</span>
     </button>
-    <!-- <nav class="fixed hidden md:flex justify-between w-full h-20 bg-darkGray z-20">
-        <div class="flex w-1/3 h-full">
-            <a href="index.html">
-                <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4 h-full">
-            </a>
-        </div>
-        <div class="flex justify-center w-auto">
-            <ul class="flex flex-row items-center justify-center gap-6">
-                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="index.html" class="px-6">Home</a>
-                </li>
-                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="menu.html" class="px-6">Menu</a>
-                </li>
-                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="about.html" class="px-6">About</a>
-                </li>
-                <li class="flex items-center h-full align-middle text-white transition-colors ease-in-out hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="contact.html" class="px-6 w-full">Contact us</a>
-                </li>
-            </ul>
-        </div>
-        <div class="w-1/3">
-
-        </div>
-    </nav>
-    <nav class="fixed z-20 w-full">
-        <div class="flex justify-between w-full h-20 bg-darkGray md:hidden">
-            <button id="toggleDrawer" class="flex justify-start items-center left-0 h-full p-4 text-white">
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-            <div class="flex m-auto h-full">
-                <img src="../assets/images/logo-icons-no-background.png" alt="Minimal logo of Llama" class="p-4">
-            </div>
-            <div class="m-4 opacity-0">
-                <span class="material-symbols-outlined select-none">menu</span>
-                <!-- Make sure this matches the size of your toggleDrawer button
-            </div>
-        </div>
-        <div id="drawer" class="fixed md:hidden top-20 left-0 w-full bg-darkGray shadow-md hidden transform -translate-y-full -z-10">
-            <ul class="flex flex-col items-center justify-center text-lg">
-                <li class="px-4 text-white h-full w-full text-center p-6 bg-zinc-700 ease-in-out transition-colors hover:bg-zinc-600 duration-100 text-nowrap">
-                    <a href="index.html">Home</a>
-                </li>
-                <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="menu.html">Menu</a>
-                </li>
-                <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="about.html">About</a>
-                </li>
-                <li class="px-4 text-white h-full w-full text-center p-6 ease-in-out transition-colors hover:bg-white hover:text-black duration-100 text-nowrap">
-                    <a href="contact.html">Contact us</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
-    <div id="navbar-pointer"></div>
-    <div class="h-20 bg-backgroundGray">
-        <!-- Empty div to prevent the content from being hidden behind the fixed nav -->
-    </div>
+    <nav id="navbar-pointer"></nav>
+    
     <div class="w-full p-12 text-white bg-backgroundGray space-y-10">
         <div class="flex flex-col justify-center mx-auto text-center w-full sm:w-1/2">
             <h1 class="text-5xl font-bold text-white">Our Menu</h1>
@@ -215,42 +157,7 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="flex w-full max-h-fit text-white bg-black justify-start md:justify-around flex-wrap space-y-4">
-        <div class="flex flex-col content-end justify-center items-start font-medium mx-auto py-6">
-            <h2 class="text-lg mb-2">QUICK LINKS</h2>
-            <ul class="justify-start text-base space-y-2 text-grayText font-medium">
-                <li>Home</li>
-                <li>Menu</li>
-                <li>Contact us</li>
-                <li>About</li>
-            </ul>
-        </div>
-        <div class="hidden flex-col justify-center items-center lg:flex">
-            <img src="../assets/images/logo-no-background2.png" alt="" class="h-1/2">
-            <h2 class="text-lg font-light text-grayText">Where Good Food Meets Great Company</h2>
-        </div>
-        <div class="flex flex-col justify-center md:content-start items-end mx-auto py-6">  
-            <ul class="flex flex-col text-sm space-y-2 text-grayText font-medium">
-                <h2 class="text-lg text-white">CONTACT</h2>
-                <li class="flex items-center">
-                    <span class="material-icons mr-2 text-blueIconColor">call</span>+354 555-3212
-                </li>
-                <li class="flex items-center">
-                    <span class="material-icons mr-2 text-blueIconColor">place</span> 1404 Food Road
-                </li>
-                <li class="flex items-center">
-                    <span class="material-icons mr-2 text-blueIconColor">email</span>frontdesk@hungryllama.com
-                </li>
-                <li class="flex items-center">
-                    <span class="material-icons mr-2 text-blueIconColor">watch_later</span>
-                    <div class="flex flex-col">
-                        <p>Mon - Fri: 11:00 - 22:00</p>
-                        <p>Sat - Sun: 11:00 - 23:00</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+    <footer id="footer-pointer"></footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
