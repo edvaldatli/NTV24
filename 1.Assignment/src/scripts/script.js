@@ -41,6 +41,8 @@ $(document).ready(() => {
         }
     });
 
+    $("#navbar-pointer").load("./components/navbar.html");
+
 
 
     scrollToSection('#starters', '#starters-section');
