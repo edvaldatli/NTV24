@@ -59,10 +59,10 @@ $(document).ready(() => {
     });
 
     // Load listeners
-    scrollToSectionLisener('#starters', '#starters-section');
-    scrollToSectionLisener('#courses', '#courses-section');
-    scrollToSectionLisener('#sandwiches', '#sandwiches-section');
-    scrollToSectionLisener('#sides', '#sides-section');
+    scrollToSectionListener('#starters', '#starters-section');
+    scrollToSectionListener('#courses', '#courses-section');
+    scrollToSectionListener('#sandwiches', '#sandwiches-section');
+    scrollToSectionListener('#sides', '#sides-section');
 });
 
 
