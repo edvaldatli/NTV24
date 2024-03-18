@@ -1,6 +1,7 @@
-function scrollToSection(buttonId, sectionId) {
+// Function that takes an id of a button and an id of a section that is scrolled to.
+function scrollToSectionListener(buttonId, sectionId) {
     $(buttonId).on('click', () => {
-        $('html, body').animate({ scrollTop: $(sectionId).offset().top -100}, 500);
+        $('html, body').animate({ scrollTop: $(sectionId).offset().top - 100 }, 500);
     });
 };
 
@@ -10,11 +11,11 @@ console.log('Script loaded');
 
 $(document).ready(() => {
     // Load navbar
-    $("#navbar-pointer").load("./components/navbar.html", function() {
+    $("#navbar-pointer").load("./components/navbar.html", function () {
         console.log('Navbar loaded');
-    
-        // Event handlers for dynamically loaded content go here
-        $(document).on('click', '#toggleDrawer', function() {
+
+        // Open or close drawer on hamburger icon click
+        $(document).on('click', '#toggleDrawer', function () {
             const drawer = $('#drawer');
             if (drawer.hasClass('translate-y-0')) {
                 drawer.removeClass('translate-y-0').addClass('-translate-y-full');
@@ -38,10 +39,10 @@ $(document).ready(() => {
     });
 
     // Load footer
-    $("#footer-pointer").load("./components/footer.html", function() {
+    $("#footer-pointer").load("./components/footer.html", function () {
         console.log('Footer loaded');
     });
-    
+
 
     // Back to top button
     $('#backToTop').on('click', () => {
@@ -57,16 +58,11 @@ $(document).ready(() => {
         }
     });
 
-    // Load components
-    
-
-
-
-    scrollToSection('#starters', '#starters-section');
-    scrollToSection('#courses', '#courses-section');
-    scrollToSection('#sandwiches', '#sandwiches-section');
-    scrollToSection('#sides', '#sides-section');
+    // Load listeners
+    scrollToSectionListener('#starters', '#starters-section');
+    scrollToSectionListener('#courses', '#courses-section');
+    scrollToSectionListener('#sandwiches', '#sandwiches-section');
+    scrollToSectionListener('#sides', '#sides-section');
 });
 
 
-  

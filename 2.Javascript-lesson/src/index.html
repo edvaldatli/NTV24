@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button incrementer</title>
+    <link rel="stylesheet" href="styles/output.css">
+</head>
+
+<body class="flex flex-col justify-center items-center h-screen gap-8">
+    <input id="limitInput" type="text" class="bg-zinc-600 text-white text-center text-4xl p-4" value="35">
+    <p id="numberContainer" class="text-4xl"></p>
+    <div class="flex flex-row space-x-6">
+        <button id="btn-increment" class="text-4xl h-32 w-32 bg-green-600 rounded-xl">+</button>
+        <button id="btn-decrement" class="text-4xl h-32 w-32 bg-red-600 rounded-xl">-</button>
+    </div>
+    <div id="kaboom" class="bg-blue-500 justify-center items-center text-white text-9xl p-6 opacity-0">
+        <p>KabOOm!</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
