@@ -19,22 +19,23 @@
 <body class="font-sans">
     <nav id="navbar-pointer"></nav>
 
-    <div class="flex flex-col w-full bg-backgroundGray text-white items-center p-8">
-        <div class="flex flex-col w-full md:w-1/2 gap-4 items-center">
+    <div class="flex flex-col w-full bg-backgroundGray text-white items-center p-4 pt-10 md:p-14 md:pt-20">
+        <div class="flex flex-col w-full md:w-1/2 gap-4 items-center justify-between space-y-8">
             <h1 class="text-4xl font-medium w-full text-center">Have something to say?</h1>
-            <p class="text-center w-full">
+            <p class="text-center w-full text-lg">
                 We'd love to hear from you! Whether you have a question, a suggestion, or just want to say hello, feel free to reach out to us. We're always here to help.
             </p>
+            
             <form action="submit" class="grid grid-rows-1 md:grid-cols-2 gap-4 w-full">
-                <input type="text" placeholder="Name" class="p-4 rounded-md bg-darkerGray col-span-2 md:col-span-1"> <!-- Name should take up one column on medium screens -->
-                <select name="request" id="request" class="p-4 rounded-md col-span-2 md:col-span-1 bg-darkerGray"> <!-- Dropdown should take up one column on medium screens -->
+                <input type="text" placeholder="Name" class="p-4 rounded-md bg-darkerGray col-span-2 md:col-span-1">
+                <select name="request" id="request" class="p-4 rounded-md col-span-2 md:col-span-1 bg-darkerGray">
                     <option value="general">General Request</option>
                     <option value="restaurants">Restaurants</option>
                     <option value="office">Office</option>
                 </select>
-                <input type="email" placeholder="Email" class="p-4 rounded-md col-span-2 bg-darkerGray"> <!-- Email should take up full width -->
-                <textarea placeholder="Message" class="p-4 rounded-md bg-darkerGray col-span-2"></textarea> <!-- Message should take up full width -->
-                <button type="submit" class="p-4 bg-zinc-900 text-white rounded-md col-span-2 transition ease-in-out duration-100 hover:drop-shadow-shadowGlow">Send</button> <!-- Button should take up full width -->
+                <input type="email" placeholder="Email" class="p-4 rounded-md col-span-2 bg-darkerGray">
+                <textarea rows="7" placeholder="Message" class="p-4 rounded-md bg-darkerGray col-span-2"></textarea>
+                <button type="submit" class="p-4 bg-zinc-900 text-white rounded-md col-span-2 transition ease-in-out duration-100 hover:drop-shadow-shadowGlow">Send</button>
             </form>
         </div>
     </div>
