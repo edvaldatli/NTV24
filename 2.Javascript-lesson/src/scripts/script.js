@@ -2,10 +2,6 @@ let number = parseInt(localStorage.getItem('number')) || 0;
 let limit = parseInt(localStorage.getItem('limit')) || 35;
 
 $(function () {
-
-    $('#numberContainer').text(number);
-    $('#limitInput').val(limit);
-
     const updateDisplayNumber = newNumber => {
         $('#numberContainer').text(newNumber);
         localStorage.setItem('number', newNumber)
@@ -18,6 +14,10 @@ $(function () {
             $('#kaboom').removeClass('opacity-100');
         }
     }
+
+    $('#numberContainer').text(number);
+    $('#limitInput').val(limit);
+    checkKaboom();
 
     $('#limitInput').on('input', () => {
         limit = $('#limitInput').val();
