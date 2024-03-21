@@ -1,9 +1,17 @@
-import { calcSum, strictEquality, getTypeOfValue, getFirstChar, getNthChar, extractFirstHalfOfString, removeLastNChractersOfString, checkIfNumberIsEven, getPercentageOfNumber, useAllTheOperators } from './basics';
-import { checkIfPropertyExistsAndTruthy, getCountry, getWeirdKeyValue, getPropertyByString, checkIfPropertyExists, createObjectWithKeyValue, createObjectWithKeyAndValue } from './objects';
+const {
+    calcSum, strictEquality, getTypeOfValue, getFirstChar, getNthChar,
+    extractFirstHalfOfString, removeLastNChractersOfString, checkIfNumberIsEven,
+    getPercentageOfNumber, useAllTheOperators
+} = require('./basics.js');
 
-import './arrays';
-import './basics.js';
-import './objects.js';
+const {
+    checkIfPropertyExistsAndTruthy, getCountry, getWeirdKeyValue, getPropertyByString,
+    checkIfPropertyExists, createObjectWithKeyValue, createObjectWithKeyAndValue,
+    createObjectFromArrays,
+    extractKeysFromObject,
+    getNestedProperty,
+    calcSumOfAllObjectValues
+} = require('./objects.js');
 
 describe('-- BASICS --', () => {
     describe('calcSum', () => {
@@ -128,6 +136,40 @@ describe('-- OBJECTS --', () => {
             expect(createObjectWithKeyAndValue('a', 'b')).toEqual({ a: 'b' });
             expect(createObjectWithKeyAndValue('z', 'x')).toEqual({ z: 'x' });
             expect(createObjectWithKeyAndValue('b', 'w')).toEqual({ b: 'w' });
+        });
+    });
+    describe('createObjectFromArrays', () => {
+        it('should take two arrays and create a single object with keys and values from the array', () => {
+            expect(createObjectFromArrays(['a', 'b', 'c'], [1, 2, 3])).toEqual({ a: 1, b: 2, c: 3 });
+            expect(createObjectFromArrays(['w', 'x', 'y', 'z'], [10, 9, 5, 2])).toEqual({ w: 10, x: 9, y: 5, z: 2 });
+            expect(createObjectFromArrays([1, 'b'], ['a', 2])).toEqual({ 1: 'a', b: 2 });
+        });
+    });
+    describe('extractKeysFromObject', () => {
+        it('should take an object and return return all keys of said object', () => {
+            expect(extractKeysFromObject({ a: 1, b: 2, c: 3 })).toEqual(['a', 'b', 'c']);
+            expect(extractKeysFromObject({ j: 9, i: 2, x: 3, z: 4 })).toEqual(['j', 'i', 'x', 'z']);
+            expect(extractKeysFromObject({ w: 15, x: 22, y: 13 })).toEqual(['w', 'x', 'y']);
+        });
+    });
+    describe('getNestedProperty', () => {
+        it('should return value of property b which is inside property a', () => {
+            expect(getNestedProperty({ a: 1 })).toEqual(undefined);
+            expect(getNestedProperty({ a: { b: { c: 3 } } })).toEqual({ c: 3 });
+            expect(getNestedProperty({ b: { a: 1 } })).toEqual(undefined);
+            expect(getNestedProperty({ a: { b: 2 } })).toEqual(2);
+        });
+    });
+    describe('calcSumOfAllObjectValues', () => {
+        it('should return sum of all object values', () => {
+            expect(calcSumOfAllObjectValues({ a: 1, b: 2, c: 3 })).toEqual(6);
+            expect(calcSumOfAllObjectValues({ j: 9, i: 2, x: 3, z: 4 })).toEqual(18);
+            expect(calcSumOfAllObjectValues({ w: 15, x: 22, y: 13 })).toEqual(50);
+        });
+    });
+    describe('removePropertyB', () => {
+        it('should remove ', () => {
+
         });
     });
 });
