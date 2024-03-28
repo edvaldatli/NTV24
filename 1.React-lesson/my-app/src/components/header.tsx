@@ -1,4 +1,3 @@
-
 type Props = {
     name: string,
     imgUrl: string,
@@ -20,7 +19,7 @@ type SubTitleProp = {
 function Image({ imgUrl }: ImageProps) {
     return (
         <img
-            className="object-contain h-full justify-end ml-auto"
+            className="object-cover min-w-24 min-h-24 max-w-24 max-h-24 align-middle justify-end ml-auto my-auto rounded-full"
             src={imgUrl}
             alt="Picture of me"
         />
@@ -36,14 +35,14 @@ function NameHeader({ name }: NameHeaderProp) {
 function SubTitle({ subTitle }: SubTitleProp) {
     return (
         <h3 className="text-lg">{subTitle}</h3>
-    );
+    )
 }
 
 
 
 export default function Header({ name, imgUrl, subTitle }: Props) {
     return (
-        <div className="flex flex-row fixed h-32 w-screen border border-black p-2">
+        <div className="flex flex-row h-32 w-screen border-b border-white p-2">
             <div className="flex flex-col justify-center p-6">
                 <NameHeader name={name} />
                 <SubTitle subTitle={subTitle} />
