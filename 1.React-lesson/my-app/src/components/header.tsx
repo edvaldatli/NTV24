@@ -19,7 +19,7 @@ type SubTitleProp = {
 function Image({ imgUrl }: ImageProps) {
     return (
         <img
-            className="object-cover min-w-24 min-h-24 max-w-24 max-h-24 align-middle justify-end ml-auto my-auto rounded-full"
+            className="object-cover max-w-28 max-h-28 align-middle justify-end ml-auto my-auto rounded-full aspect-square"
             src={imgUrl}
             alt="Picture of me"
         />
@@ -42,7 +42,7 @@ function SubTitle({ subTitle }: SubTitleProp) {
 
 export default function Header({ name, imgUrl, subTitle }: Props) {
     return (
-        <div className="flex flex-row h-32 w-screen border-b border-white p-2">
+        <div className="flex flex-row border-b border-white p-2 bg-zinc-900">
             <div className="flex flex-col justify-center p-6">
                 <NameHeader name={name} />
                 <SubTitle subTitle={subTitle} />

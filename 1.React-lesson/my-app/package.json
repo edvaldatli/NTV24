@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://edvaldatli.github.io/NTV24/1.React-lesson",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
