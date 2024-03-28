@@ -1,7 +1,7 @@
 // Write a function that takes an array (a) and a value (n) as argument
 // Return the nth element of 'a'
 const getNthCharacterInArray = (a, n) => {
-    return a[n];
+    return a[n-1];
 };
 
 /*
@@ -35,17 +35,13 @@ myFunction([99,1,1]) Expected []
 // It should return the last n elements of a
 // Tip: use the array prototype function slice()
 const removeLastNElements = (a, n) => {
-    return a.slice(0, -n);
+    return a.slice(-n);
 };
-
-/*
-    EITTHVAÐ SKRÍTIÐ
-*/
 
 /*
 Test cases:
 myFunction([1, 2, 3, 4, 5], 2) Expected [ 4, 5 ]
-myFunction([1, 2, 3], 6) Expected [ 1, 2, 3 ] ???????
+myFunction([1, 2, 3], 6) Expected [ 1, 2, 3 ]
 myFunction([1, 2, 3, 4, 5, 6, 7, 8], 3) Expected [ 6, 7, 8 ]
 */
 
@@ -72,13 +68,7 @@ myFunction([4,3,2,1,0]) Expected 5
 // - Use .filter() to filter only negative numbers, and count them
 // - Use .forEach() to iterate through all numbers and count negatives
 const countNumberOfNegativeValues = (a) => {
-    let counter = 0;
-    a.forEach(val => {
-        if (val < 0) {
-            counter++;
-        }
-    });
-    return counter;
+    return a.filter(val => val < 0).length;
 };
 
 /*

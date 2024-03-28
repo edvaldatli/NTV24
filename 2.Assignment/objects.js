@@ -3,7 +3,7 @@
 // In other words, it should not be null or undefined or false
 // Return false otherwise
 const checkIfPropertyExistsAndTruthy = (a, b) => {
-    return a.b ? true : false;
+    return a[b] ? true : false;
 };
 
 /*

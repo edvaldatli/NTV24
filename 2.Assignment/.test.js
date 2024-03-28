@@ -1,17 +1,45 @@
 const {
-    calcSum, strictEquality, getTypeOfValue, getFirstChar, getNthChar,
-    extractFirstHalfOfString, removeLastNChractersOfString, checkIfNumberIsEven,
-    getPercentageOfNumber, useAllTheOperators
+    calcSum,
+    strictEquality,
+    getTypeOfValue,
+    getFirstChar,
+    getNthChar,
+    extractFirstHalfOfString,
+    removeLastNChractersOfString,
+    checkIfNumberIsEven,
+    getPercentageOfNumber,
+    useAllTheOperators
 } = require('./basics.js');
 
 const {
-    checkIfPropertyExistsAndTruthy, getCountry, getWeirdKeyValue, getPropertyByString,
-    checkIfPropertyExists, createObjectWithKeyValue, createObjectWithKeyAndValue,
+    checkIfPropertyExistsAndTruthy,
+    getCountry,
+    getWeirdKeyValue,
+    getPropertyByString,
+    checkIfPropertyExists,
+    createObjectWithKeyValue,
+    createObjectWithKeyAndValue,
     createObjectFromArrays,
     extractKeysFromObject,
     getNestedProperty,
-    calcSumOfAllObjectValues
+    calcSumOfAllObjectValues,
+    removePropertyB,
+    mergeAndFixObjects,
+    multipyAllValuesByB
 } = require('./objects.js');
+
+const {
+    getNthCharacterInArray,
+    removeFirstThreeElements,
+    removeLastNElements,
+    countNumberOfElements,
+    countNumberOfNegativeValues,
+    calcSumOfArrayOfNumbers,
+    calcAvgOfArrayOfNumbers,
+    getLongestStringFromArray,
+    areAllEqual,
+    mergeAllArrays
+} = require('./arrays.js');
 
 describe('-- BASICS --', () => {
     describe('calcSum', () => {
@@ -169,7 +197,95 @@ describe('-- OBJECTS --', () => {
     });
     describe('removePropertyB', () => {
         it('should remove ', () => {
+            expect(removePropertyB({a: 1, b:7, c:3})).toEqual({a: 1, c: 3});
+            expect(removePropertyB({b:0, a:7, d:8})).toEqual({a: 7, d: 8});
+            expect(removePropertyB({e: 6, f:4, b:5, a:3})).toEqual({e: 6, f: 4, a: 3});
+        });
+    });
+    describe('mergeAndFixObjects', () => {
+        it('should merge two objects and replace the key b with the key name d', () => {
+            expect(mergeAndFixObjects({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 })).toEqual({ a: 1, b: 2, c: 3, e: 5, d: 4});
+            expect(mergeAndFixObjects({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 })).toEqual({ a: 5, b: 4, c: 3, e: 2, d: 1});
+        });
+    });
+    describe('multiplyAllValuesByB', () => {
+        it('should multiply all values in the object by the integer that is passed', () => {
+            expect(multipyAllValuesByB({a:1, b:2, c:3}, 3)).toEqual({a:3, b:6, c:9});
+            expect(multipyAllValuesByB({j:9, i:2, x:3, z:4}, 10)).toEqual({j:90, i:20, x:30, z:40});
+            expect(multipyAllValuesByB({w:15, x:22, y:13}, 6)).toEqual({w:90, x:132, y:78});
+        });
+    });
+});
 
+describe('-- ARRAYS --', () => {
+    describe('getNthCharacterInArray', () => {
+        it('should get the value of the index provided', () => {
+            expect(getNthCharacterInArray([1,2,3,4,5], 3)).toEqual(3);
+            expect(getNthCharacterInArray([10,9,8,7,6], 5)).toEqual(6);
+            expect(getNthCharacterInArray([7,2,1,6,3], 1)).toEqual(7);
+        });
+    });
+    describe('removeFirstThreeElements', () => {
+        it('should first 3 elements from array provided', () => {
+            expect(removeFirstThreeElements([1, 2, 3, 4])).toEqual([4]);
+            expect(removeFirstThreeElements([5,4,3,2,1,0])).toEqual([2,1,0]);
+            expect(removeFirstThreeElements([99, 1, 1])).toEqual([]);
+        });
+    });
+    describe('removeLastNElements', () => {
+        it('should remove last N elements from the array provided', () => {
+            expect(removeLastNElements([1, 2, 3, 4, 5], 2)).toEqual([4, 5]);
+            expect(removeLastNElements([1, 2, 3], 6)).toEqual([1, 2, 3]);
+            expect(removeLastNElements([1, 2, 3, 4, 5, 6, 7, 8], 3)).toEqual([6, 7, 8]);
+        });
+    });
+    describe('countNumberOfElements', () => {
+        it('should return the number of elements in the array provided', () => {
+            expect(countNumberOfElements([1, 2, 2, 4])).toEqual(4);
+            expect(countNumberOfElements([9,9,9])).toEqual(3);
+            expect(countNumberOfElements([4,3,2,1,0])).toEqual(5);
+        });
+    });
+    describe('countNumberOfNegativeValues', () => {
+        it('should count all negative values in an array', () => {
+            expect(countNumberOfNegativeValues([1, -2, 2, -4])).toEqual(2);
+            expect(countNumberOfNegativeValues([0, 9, 1])).toEqual(0);
+            expect(countNumberOfNegativeValues([4, -3, 2, 1, 0])).toEqual(1);
+        });
+    });
+    describe('calcSumOfArrayNumbers', () => {
+        it('should return a sum of all numbers in the array', () => {
+            expect(calcSumOfArrayOfNumbers([10,100,40])).toEqual(150);
+            expect(calcSumOfArrayOfNumbers([10,100,1000,1])).toEqual(1111);
+            expect(calcSumOfArrayOfNumbers([-50,0,50,200])).toEqual(200);
+        });
+    });
+    describe('calcAvgOfArrayNumbers', () => {
+        it('should return the average of all array numbers', () => {
+            expect(calcAvgOfArrayOfNumbers([10,100,40])).toEqual(50);
+            expect(calcAvgOfArrayOfNumbers([10,100,1000])).toEqual(370);
+            expect(calcAvgOfArrayOfNumbers([-50,0,50,200])).toEqual(50);
+        });
+    });
+    describe('GetLongestStringFromArray', () => {
+        it('should return the longest string of the array', () => {
+            expect(getLongestStringFromArray(['help', 'me'])).toEqual('help');
+            expect(getLongestStringFromArray(['I', 'need', 'candy'])).toEqual('candy');
+        });
+    });
+    describe('areAllEqual', () => {
+        it('should return true if all elements of the array is equal', () => {
+            expect(areAllEqual([true, true,true, true])).toEqual(true);
+            expect(areAllEqual(['test', 'test', 'test'])).toEqual(true);
+            expect(areAllEqual([1, 1, 1, 2])).toEqual(false);
+            expect(areAllEqual(['10', 10, 10, 10])).toEqual(false);
+        });
+    });
+    describe('mergeAllArrays', () => {
+        it('should merge all arrays into a single array and return it', () => {
+            expect(mergeAllArrays([1, 2, 3], [4, 5, 6])).toEqual([1, 2, 3, 4, 5, 6]);
+            expect(mergeAllArrays(['a', 'b', 'c'], [4, 5, 6])).toEqual(['a', 'b', 'c', 4, 5, 6]);
+            expect(mergeAllArrays([true, true], [1, 2], ['a', 'b'])).toEqual([true, true, 1, 2, 'a', 'b']);
         });
     });
 });
